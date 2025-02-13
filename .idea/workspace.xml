@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94fd23c8-41d0-45d7-99f5-ebecad2c5a9b" name="Changes" comment="" />
+    <list default="true" id="94fd23c8-41d0-45d7-99f5-ebecad2c5a9b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/APIFlask/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/APIFlask/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/APIFlask/routes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/APIFlask/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,6 +27,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/APIFlask/ApiFlask.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AnaliseCSV.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
@@ -35,8 +42,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.AnaliseCSV.executor": "Run",
+    "Python.ApiFlask.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.routes.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "SelecaoAE"
+    "git-widget-placeholder": "main"
   }
 }]]></component>
   <component name="RecentsManager">

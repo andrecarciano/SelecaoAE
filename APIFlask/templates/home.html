@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação da API Flask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à API Flask</h1>
+        <p>Documentação completa para os endpoints da API</p>
+    </header>
+
+    <section class="intro">
+        <h2>Apresentação da API</h2>
+        <p>
+            Esta API foi desenvolvida utilizando o framework Flask para Python. Ela foi criada com o propósito de
+            fornecer funcionalidades simples, como retornar saudações personalizadas e realizar operações matemáticas
+            básicas como soma. A API foi projetada para ser fácil de usar e para facilitar o desenvolvimento de sistemas
+            que precisem de interações simples com o backend.
+        </p>
+        <p>
+            A API oferece três endpoints principais:
+        </p>
+        <ul>
+            <li><strong>Home:</strong> A página inicial da API.</li>
+            <li><strong>Saudação:</strong> Retorna uma saudação personalizada.</li>
+            <li><strong>Soma:</strong> Realiza a soma de dois números fornecidos via JSON.</li>
+        </ul>
+    </section>
+
+    <section class="api-endpoint">
+        <h2>1. End Point: Home</h2>
+        <p><strong>URL:</strong> <code>/</code></p>
+        <p><strong>Método:</strong> GET</p>
+        <p><strong>Descrição:</strong> Retorna a página inicial.</p>
+    </section>
+
+    <section class="api-endpoint">
+        <h2>2. End Point: Saudação</h2>
+        <p><strong>URL:</strong> <code>/saudacao?nome={nome}</code></p>
+        <p><strong>Método:</strong> GET</p>
+        <p><strong>Descrição:</strong> Retorna uma saudação personalizada com o nome enviado como parâmetro na query string.</p>
+        <pre><code>Exemplo de chamada: /saudacao?nome=Andrezinho</code></pre>
+        <p><strong>Resposta:</strong> "Olá, {nome} seja muito bem-vindo(a) a minha API Flask"</p>
+    </section>
+
+    <section class="api-endpoint">
+        <h2>3. End Point: Soma</h2>
+        <p><strong>URL:</strong> <code>/soma</code></p>
+        <p><strong>Método:</strong> POST</p>
+        <p><strong>Descrição:</strong> Recebe um objeto JSON no corpo da requisição e retorna a soma dos dois números fornecidos.</p>
+        <pre><code>Exemplo de JSON enviado:</code>
+        {
+            "operando1": 10,
+            "operando2": 5
+        }</pre>
+        <p><strong>Resposta:</strong> "A soma de {operando1} + {operando2} é {soma}"</p>
+    </section>
+
+    <footer>
+        <p>Andre Carciano 2025 API Flask</p>
+    </footer>
+</body>
+</html>
