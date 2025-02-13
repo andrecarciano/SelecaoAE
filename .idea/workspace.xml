@@ -7,10 +7,12 @@
     <list default="true" id="94fd23c8-41d0-45d7-99f5-ebecad2c5a9b" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/TesteSelecaoAE.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/AnaliseCSV.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Vendas.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +45,7 @@
   "keyToString": {
     "Python.AnaliseCSV.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+    "git-widget-placeholder": "SelecaoAE"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -68,5 +70,16 @@
       <updated>1739396089992</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
