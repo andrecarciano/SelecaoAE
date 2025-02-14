@@ -1,20 +1,19 @@
-from flask import jsonify, request, render_template
-from main import app
+import os
+from App import app
+from flask import jsonify, request, render_template, send_file
+import pandas as pd
+from AnaliseCSV import _analisar
 
 #rotas
-#End point home
-@app.route('/', methods=['GET'])
-def home():
-    return render_template("home.html")
 
-
+##END POINTS PROPOSTOS NA AVALIAÇÃO
 #End Point de Saudação
 @app.route('/saudacao', methods=['GET'])
 def saudacao():
     #Parametro recebido por QueryString
     nome = request.args['nome']
-
     return f"Olá, {nome} seja muito bem-vindo(a) a minha API Flask"
+
 
 #End Point de Soma
 @app.route('/soma', methods=['POST'])
@@ -29,3 +28,41 @@ def soma():
     operando2 = json.get("operando2")
     #Retorna a soma dos Numeros
     return f"A soma de {operando1} + {operando2} é {operando1+operando2}"
+
+
+##END POINTS SOBRESALENTES
+#Download Arquivo JSON
+@app.route('/download-json')
+def download_json():
+    caminho_arquivo = "postmanJson\\postman_collection.json"
+    return send_file(caminho_arquivo, as_attachment=True, mimetype='application/json')
+
+
+#Download Arquivo CSV
+@app.route('/download-csv')
+def download_csv():
+    return send_file("Vendas.csv", as_attachment=True, mimetype='csv')
+
+
+#End point home
+@app.route('/', methods=['GET'])
+def home():
+    return render_template("home.html")
+
+
+#End point Para manipular CSV
+@app.route('/csv', methods=['POST'])
+def csv():
+    #Recebe o arquivo carregado
+    arquivo = request.files['file']
+
+    #Caminho para salvamento temporario
+    caminho_arquivo = os.path.join('temp', arquivo.filename)
+
+    #Cria a pasta temporaria caso ainda não exista
+    os.makedirs('temp', exist_ok=True)
+
+    #Salva o arquivo na pasta do sistema
+    arquivo.save(caminho_arquivo)
+
+    return _analisar(caminho_arquivo)

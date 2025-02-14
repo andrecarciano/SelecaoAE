@@ -37,9 +37,13 @@ section.api-endpoint {
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 10px;
     color: #333;
+}
+
+h3{
+    font-size: 1.0rem;
 }
 
 p, pre {

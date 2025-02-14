@@ -1,66 +1,244 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentação da API Flask</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>API Flask</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
+
+<body class="container">
     <header>
-        <h1>Bem-vindo à API Flask</h1>
-        <p>Documentação completa para os endpoints da API</p>
+        <h1>Bem-vindo(a) à API Flask</h1>
+        <span>by André Carciano!!!</span>
     </header>
+    <!-- menu navegação TABS -->
+    <nav class="intro pt-5">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="documentacaoAlg-tab" data-bs-toggle="tab"
+                    data-bs-target="#documentacaoAlg" type="button" role="tab" aria-controls="documentacaoAlg"
+                    aria-selected="false">Documentação Algorítimo</button>
+            </li>
 
-    <section class="intro">
-        <h2>Apresentação da API</h2>
-        <p>
-            Esta API foi desenvolvida utilizando o framework Flask para Python. Ela foi criada com o propósito de
-            fornecer funcionalidades simples, como retornar saudações personalizadas e realizar operações matemáticas
-            básicas como soma. A API foi projetada para ser fácil de usar e para facilitar o desenvolvimento de sistemas
-            que precisem de interações simples com o backend.
-        </p>
-        <p>
-            A API oferece três endpoints principais:
-        </p>
-        <ul>
-            <li><strong>Home:</strong> A página inicial da API.</li>
-            <li><strong>Saudação:</strong> Retorna uma saudação personalizada.</li>
-            <li><strong>Soma:</strong> Realiza a soma de dois números fornecidos via JSON.</li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="algoritimocsv-tab" data-bs-toggle="tab" data-bs-target="#algoritimocsv"
+                    type="button" role="tab" aria-controls="algoritimocsv" aria-selected="false">Algorítimo CSV</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="documentacaoapi-tab" data-bs-toggle="tab" data-bs-target="#documentacaoapi"
+                    type="button" role="tab" aria-controls="documentacaoapi" aria-selected="false">Documentação
+                    API</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="api-tab" data-bs-toggle="tab" data-bs-target="#api" type="button"
+                    role="tab" aria-controls="api" aria-selected="true">API End Points</button>
+            </li>
+
         </ul>
-    </section>
+    </nav>
+    <!-- END menu navegação TABS -->
+    <div class="tab-content pt-4" id="myTabContent">
+        <!-- DOCUMENTAÇÃO ALGORITIMO -->
+        <section class="tab-pane fade show active" id="documentacaoAlg" role="tabpanel" aria-labelledby="documentacaoAlg-tab" tabindex="0">
+            <section class="intro">
+                <h2>Apresentação</h2>
+                <p>
+                    Este projeto foi desenvolvido a fim de realizar o Teste do processo seletivo para a Vaga de
+                    Desenvolvedor Python Jr. do <strong>Hosp. Albert Einstein</strong>
+                </p>
+                <p>
+                    A principio eu comecei a fazer projetos separados e no meio do caminho decidí que sería mais vantajoso
+                    se incluisse todas as funcionalidades em um mesmo projeto, podendo demonstrar mais as minhas capacidades
+                </p>
+                <h2>
+                    Questão 2 - Manipulação de CSV com Python
+                </h2>
+                <p>
+                    O algoritimo de analise de arquivo CSV encontra-se na segunda aba "Algorítimo CSV"
+                </p>
+                <p>
+                    Este script é um exemplo simples de análise e manipulação de um arquivo CSV com algumas informações
+                    de vendas de produtos.
+                    Dentro do projeto, você encontrará o arquivo <strong>"Vendas.csv"</strong> que contém alguns dados
+                    para teste.
+                </p>
 
-    <section class="api-endpoint">
-        <h2>1. End Point: Home</h2>
-        <p><strong>URL:</strong> <code>/</code></p>
-        <p><strong>Método:</strong> GET</p>
-        <p><strong>Descrição:</strong> Retorna a página inicial.</p>
-    </section>
+                <p>
+                    Insira esse arquivo no file upload da aba Algoritimo CSV
+                </p>
 
-    <section class="api-endpoint">
-        <h2>2. End Point: Saudação</h2>
-        <p><strong>URL:</strong> <code>/saudacao?nome={nome}</code></p>
-        <p><strong>Método:</strong> GET</p>
-        <p><strong>Descrição:</strong> Retorna uma saudação personalizada com o nome enviado como parâmetro na query string.</p>
-        <pre><code>Exemplo de chamada: /saudacao?nome=Andrezinho</code></pre>
-        <p><strong>Resposta:</strong> "Olá, {nome} seja muito bem-vindo(a) a minha API Flask"</p>
-    </section>
+                <h3>Princípios básicos</h3>
+                <p>
+                    - Calcular e exibir o faturamento total por produto e total de unidades vendidas.
+                </p>
+                <p>
+                    - Encontrar e exibir o produto com maior faturamento e o produto com menor faturamento.
+                </p>
 
-    <section class="api-endpoint">
-        <h2>3. End Point: Soma</h2>
-        <p><strong>URL:</strong> <code>/soma</code></p>
-        <p><strong>Método:</strong> POST</p>
-        <p><strong>Descrição:</strong> Recebe um objeto JSON no corpo da requisição e retorna a soma dos dois números fornecidos.</p>
-        <pre><code>Exemplo de JSON enviado:</code>
-        {
-            "operando1": 10,
-            "operando2": 5
-        }</pre>
-        <p><strong>Resposta:</strong> "A soma de {operando1} + {operando2} é {soma}"</p>
-    </section>
+                <h3>Tecnologias utilizadas</h3>
+
+                <p>- <strong>pandas</strong>: Para manipulação de dados do arquivo CSV.</p>
+                <p>- <strong>pathlib</strong>: Para verificação do caminho do arquivo "Vendas.csv".</p>
+                <p>- <strong>flask</strong>: Para conversão e retorno do JSON.</p>
+
+                <p>- <strong>Python:</strong> 3.13.2</p>
+                <p>- <strong>Bootstrap:</strong> 5.3</p>
+                <p>- <strong>JavaScript</strong></p>
+                <p>- <strong>CSS</strong></p>
+                <br>
+                <h2> Funcionamento</h2>
+
+                <h3> Verificação do arquivo</h3>
+
+                <p>O script recebe o caminho do arquivo <strong>Vendas.csv</strong> que será salvo pelo end point (/csv) da API Flask</p>
+
+                <h3> Verificação das colunas </h3>
+
+                <p>O script verifica se as colunas necessárias (<strong>produto, quantidade, preco_unitario</strong>)
+                    estão presentes no arquivo.
+                    Se alguma dessas colunas estiver ausente, o programa é encerrado com uma mensagem de erro.</p>
+
+                <h3>Estrutura do script</h3>
+
+                <p><strong>1. Função `_analisar(caminho_arquivo)`</strong></p>
+                <p>- É a função principal do script.</p>
+                <p>- Verifica se todas as colunas necessárias estão presentes.</p>
+                <p>- Lê o arquivo utilizando o delimitador `;`.</p>
+                <p>- Calcula o faturamento total de cada produto (`quantidade * preco_unitario`).</p>
+                <p>- Agrupa os dados por produto, somando as quantidades vendidas e o faturamento total.</p>
+                <p>- Chama a função `_retorna_json()` para retornar os resultados.</p>
+
+                <p><strong>2. Função `_verifica_colunas(caminho_arquivo, colunas_utilizadas)`</strong></p>
+                <p>- Confirma se todas as colunas necessárias estão presentes no arquivo CSV.</p>
+                <p>- Caso alguma coluna esteja ausente, o script é encerrado com uma mensagem de erro.</p>
+
+                <p><strong>3.Função `_retorna_json(tabela_agrupada)`</strong></p>
+                <p>- Retorna um json com os resultados.
+                <p>- Chama `_menor_maior_faturamento()` para obter os produtos com menor e maior faturamento.</p>
+                <p>- Formata os valores monetários para o formato `R$XX,XX`.</p>
+                <p>- Printa a tabela de vendas com a quantidade total vendida e faturamento total por produto.</p>
+                <p>- Printa também os produtos com menor e maior faturamento.</p>
+
+                <p><strong>4. Função `_menor_maior_faturamento(tabela_agrupada)`</strong></p>
+                <p>- Recebe um DataFrame com os dados agrupados por produto.</p>
+                <p>- Encontra o produto com menor faturamento e o produto com maior faturamento.</p>
+                <p>- Retorna um novo DataFrame contendo os nomes desses produtos e seus valores formatados como `R$`.
+                </p>
+            </section>
+        </section>
+        <!-- END DOCUMENTAÇÃO ALGORITIMO -->
+        <!-- ALGORITMO CSV -->
+        <section class="tab-pane fade show" id="algoritimocsv" role="tabpanel" aria-labelledby="algoritimocsv-tab" tabindex="1">
+            <h2>
+                Questão 2 - Manipulação de CSV com Python
+            </h2>
+            <div class="mb-3">
+                <label for="formFile" class="form-label">Insira o Arquivo "Vendas.csv" voce pode encontra-lo na pasta raiz do projeto ou baixar 
+                    <a href="http://127.0.0.1:5000/download-csv" download="Vendas.csv">aqui</a> 
+                </label>
+                <input class="form-control" type="file" id="formFile" accept=".csv" onchange="ArquivoSelecionado(event)">
+              </div>
+        </section>
+        <!-- END ALGORITMO CSV -->
+         <!-- DOCUMENTAÇÃO API -->
+        <section class="tab-pane fade show" id="documentacaoapi" role="tabpanel" aria-labelledby="documentacaoapi-tab" tabindex="2">
+            <section>
+                <p>
+                    A API que encontra-se na ultima aba foi desenvolvida utilizando o framework Flask para Python. Ela
+                    foi criada com o propósito de fornecer funcionalidades simples para demonstração.
+                </p>
+                <p>
+                    A API oferece tres endpoints principais:
+                </p>
+                <ul>
+                    <li><strong>Home:</strong> A página inicial(Pagina atual) da API.</li>
+                    <li><strong>Saudação:</strong> Retorna uma saudação personalizada.</li>
+                    <li><strong>Soma:</strong> Realiza a soma de dois números fornecidos via JSON.</li>
+                </ul>
+                <p>Alem dos end points de uso interno e o end point de Análise de CSV</p>
+            </section>
+
+            <section class="api-endpoint">
+                <h2>1. End Point: Home</h2>
+                <p><strong>URL:</strong> <code>/</code></p>
+                <p><strong>Método:</strong> GET</p>
+                <p><strong>Descrição:</strong> Retorna a página inicial.</p>
+            </section>
+
+            <section class="api-endpoint">
+                <h2>2. End Point: Saudação</h2>
+                <p><strong>URL:</strong> <code>/saudacao?nome={nome}</code></p>
+                <p><strong>Método:</strong> GET</p>
+                <p><strong>Descrição:</strong> Retorna uma saudação personalizada com o nome enviado como parâmetro na
+                    query string.</p>
+                <pre><code>Exemplo de chamada: http://localhost:5000/saudacao?nome=Andrezinho</code></pre>
+                <p><strong>Resposta:</strong> "Olá, {nome} seja muito bem-vindo(a) a minha API Flask"</p>
+            </section>
+
+            <section class="api-endpoint">
+                <h2>3. End Point: Soma</h2>
+                <p><strong>URL:</strong> <code>/soma</code></p>
+                <p><strong>Método:</strong> POST</p>
+                <p><strong>Descrição:</strong> Recebe um objeto JSON no corpo da requisição e retorna a soma dos dois
+                    números fornecidos.</p>
+                <pre>
+                    <code>Exemplo de JSON enviado:</code>
+                    {
+                        "operando1": 10,
+                        "operando2": 5
+                    }
+                </pre>
+                <p><strong>Resposta:</strong> "A soma de {operando1} + {operando2} é {soma}"</p>
+            </section>
+
+        </section>
+        <!--END DOCUMENTAÇÃO API -->
+        <!-- API -->
+        <section class="tab-pane fade show" id="api" role="tabpanel" aria-labelledby="api-tab" tabindex="3">
+            <p>Voce pode testar os end points com o postman atraves do 
+                <a href="http://127.0.0.1:5000/download-json"download="APIFlask.postman_collection.json">Arquivo JSON</a>
+            </p>
+
+            <h1>Método GET</h1>
+            <h2>(/saudacao?nome={SeuNome} )</h2>
+            <br>
+            <form action="http://127.0.0.1:5000/saudacao" method="GET">
+                <fieldset>
+                    <legend>Insira seu nome</label>
+                    <input type="text" id="nome" name="nome">
+                    <button id="saudacao" type="submit" class="btn btn-success">Enviar</button>
+                </fieldset>
+            </form>
+            <br>
+            <br>
+            <h1>Método POST</h1>
+            <h2>(/soma)</h2>
+            <br>
+            <form id="formpost" action="http://127.0.0.1:5000/soma" method="POST">
+                <fieldset>
+                    <legend>Primeiro número</legend>
+                    <input type="text" id="operando1" name="operando1">
+                </fieldset>
+                <fieldset>
+                    <legend>Segundo número</legend>
+                    <input type="text" id="operando2" name="operando2">
+                </fieldset>
+                <button id="saudacao" type="submit" class="btn btn-success">Enviar</button>
+            </form>
+
+        </section>
+        <!-- END API -->
+    </div>
 
     <footer>
-        <p>Andre Carciano 2025 API Flask</p>
+        <p>Andre Carciano!!! - 2025 - API com Flask</p>
     </footer>
 </body>
+<script src="../static/js/script.js"></script>
 </html>

@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94fd23c8-41d0-45d7-99f5-ebecad2c5a9b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/APIFlask/Readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/APIFlask/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/APIFlask/routes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/APIFlask/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/APIFlask/static/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APIFlask/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/APIFlask/AnaliseCSV/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APIFlask/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/APIFlask/App.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APIFlask/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/APIFlask/routes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APIFlask/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/APIFlask/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APIFlask/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/APIFlask/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnaliseCSV.py" beforeDir="false" afterPath="$PROJECT_DIR$/APIFlask/AnaliseCSV/AnaliseCSV.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vendas.csv" beforeDir="false" afterPath="$PROJECT_DIR$/APIFlask/Vendas.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,9 +35,9 @@
     <setting file="file://$PROJECT_DIR$/APIFlask/ApiFlask.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/AnaliseCSV.py" root0="SKIP_INSPECTION" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2sxTBPH0mLAc7R7U9QepAtU2ZKa" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -43,14 +48,20 @@
   "keyToString": {
     "Python.AnaliseCSV.executor": "Run",
     "Python.ApiFlask.executor": "Run",
+    "Python.App.executor": "Run",
+    "Python.app.executor": "Run",
     "Python.main.executor": "Run",
     "Python.routes.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Andrezinho\PycharmProjects\TesteSelecaoAE\APIFlask" />
+      <recent name="C:\Users\Andrezinho\PycharmProjects\TesteSelecaoAE\APIFlask\AnaliseCSV" />
+      <recent name="C:\Users\Andrezinho\PycharmProjects\TesteSelecaoAE\APIFlask\static\js" />
       <recent name="C:\Users\Andrezinho\PycharmProjects\TesteSelecaoAE" />
     </key>
   </component>
@@ -82,5 +93,23 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/APIFlask/routes.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
