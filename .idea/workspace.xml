@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="94fd23c8-41d0-45d7-99f5-ebecad2c5a9b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/APIFlask/static/js/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FuncaoAssincrona/FuncAsync.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FuncaoAssincrona/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APIFlask/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/APIFlask/AnaliseCSV/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APIFlask/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/APIFlask/App.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APIFlask/AnaliseCSV/AnaliseCSV.py" beforeDir="false" afterPath="$PROJECT_DIR$/APIFlask/AnaliseCSV/AnaliseCSV.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/APIFlask/App.py" beforeDir="false" afterPath="$PROJECT_DIR$/APIFlask/App.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/APIFlask/routes.py" beforeDir="false" afterPath="$PROJECT_DIR$/APIFlask/routes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APIFlask/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/APIFlask/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/APIFlask/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/APIFlask/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnaliseCSV.py" beforeDir="false" afterPath="$PROJECT_DIR$/APIFlask/AnaliseCSV/AnaliseCSV.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vendas.csv" beforeDir="false" afterPath="$PROJECT_DIR$/APIFlask/Vendas.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,20 +45,28 @@
     "Python.AnaliseCSV.executor": "Run",
     "Python.ApiFlask.executor": "Run",
     "Python.App.executor": "Run",
+    "Python.FuncAsync.executor": "Run",
     "Python.app.executor": "Run",
+    "Python.async.executor": "Run",
     "Python.main.executor": "Run",
-    "Python.routes.executor": "Debug",
+    "Python.routes.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main"
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Andrezinho/PycharmProjects/TesteSelecaoAE/FuncaoAssincrona"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Andrezinho\PycharmProjects\TesteSelecaoAE\FuncaoAssincrona" />
+      <recent name="C:\Users\Andrezinho\PycharmProjects\TesteSelecaoAE\APIFlask\FuncaoAssincrona" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Andrezinho\PycharmProjects\TesteSelecaoAE" />
+      <recent name="C:\Users\Andrezinho\PycharmProjects\TesteSelecaoAE\APIFlask\FuncaoAssincrona" />
       <recent name="C:\Users\Andrezinho\PycharmProjects\TesteSelecaoAE\APIFlask" />
       <recent name="C:\Users\Andrezinho\PycharmProjects\TesteSelecaoAE\APIFlask\AnaliseCSV" />
       <recent name="C:\Users\Andrezinho\PycharmProjects\TesteSelecaoAE\APIFlask\static\js" />
-      <recent name="C:\Users\Andrezinho\PycharmProjects\TesteSelecaoAE" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -99,8 +103,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/APIFlask/routes.py</url>
-          <line>9</line>
-          <option name="timeStamp" value="2" />
+          <line>35</line>
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>

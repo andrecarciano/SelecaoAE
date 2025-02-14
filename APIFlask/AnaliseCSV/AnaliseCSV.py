@@ -1,5 +1,6 @@
+import os
+
 import pandas as pd
-from pathlib import Path
 from flask import jsonify
 
 #region FUNÇÕES
@@ -49,7 +50,8 @@ def _retorna_json(tabela_agrupada):
 
     return jsonify(response)
 
-##Função que realiza o print do resultado com quatidade de produtos vendidos e o valor total do faturamento
+
+##Função que retorna o json do resultado com quatidade de produtos vendidos e o valor total do faturamento
 def _analisar(caminho_arquivo):
 
     #Define as colunas que serão utilizadas
@@ -70,6 +72,9 @@ def _analisar(caminho_arquivo):
             "valor_total": "sum"
         }).reset_index()
           .rename(columns={"quantidade":"Quantidade_Vendida","valor_total":"Faturamento_Total","produto":"Produto"}))#renomeando as colunas e o agrupamento
+
+        #DELETA O ARQUIVO TEMPORARIO
+        os.remove(caminho_arquivo)
 
         #retorna um json com os resultados
         return _retorna_json(tabela_agrupada)
