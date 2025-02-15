@@ -18,14 +18,14 @@ Este projeto foi criado com o intuito de demonstrar algumas habilidades e resolv
 ### 🔹 1- Análise de Dados em arquivo CSV
 📌 Contém uma lógica para analisar dados em um arquivo CSV.
 
-📑 Toda a Documentação detalhada você encontra no arquivo [README.md](https://github.com/andrecarciano/SelecaoAE/tree/main/APIFlask#-quest%C3%A3o-2---manipula%C3%A7%C3%A3o-de-csv-com-python) dentro da pasta **“APIFlask”** e na aba **“Documentação Algorítimo”** com o app em execução.
+📑 Toda a Documentação detalhada você encontra no arquivo [README.md](https://github.com/andrecarciano/SelecaoAE/tree/main/APIFlask#-quest%C3%A3o-2---manipula%C3%A7%C3%A3o-de-csv-com-python) dentro da pasta **“APIFlask”** e na aba **“Algorítimo CSV”** com o app em execução.
 
 ### 🔹 2- API com Endpoints GET e POST
 📌 Contém uma API simples com os Endpoints solicitados:
 - **GET(/saudacao)**
 - **POST(/soma)**
   
-📑 Toda a Documentação detalhada você encontra no arquivo [README.md](https://github.com/andrecarciano/SelecaoAE/tree/main/APIFlask#-quest%C3%A3o-3---web-frameworks-api-com-flask) dentro da pasta **“APIFlask”** e na aba **“Documentação API”** com o app em execução.
+📑 Toda a Documentação detalhada você encontra no arquivo [README.md](https://github.com/andrecarciano/SelecaoAE/tree/main/APIFlask#-quest%C3%A3o-3---web-frameworks-api-com-flask) dentro da pasta **“APIFlask”** e na aba **“API END POINTS”** com o app em execução.
 
 ---
 
