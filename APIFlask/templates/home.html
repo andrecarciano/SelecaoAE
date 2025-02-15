@@ -18,21 +18,11 @@
     <!-- menu navegação TABS -->
     <nav class="intro pt-5">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="documentacaoAlg-tab" data-bs-toggle="tab"
-                    data-bs-target="#documentacaoAlg" type="button" role="tab" aria-controls="documentacaoAlg"
-                    aria-selected="false">Documentação Algorítimo</button>
-            </li>
 
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="algoritimocsv-tab" data-bs-toggle="tab" data-bs-target="#algoritimocsv"
-                    type="button" role="tab" aria-controls="algoritimocsv" aria-selected="false">Algorítimo CSV</button>
-            </li>
-
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="documentacaoapi-tab" data-bs-toggle="tab" data-bs-target="#documentacaoapi"
-                    type="button" role="tab" aria-controls="documentacaoapi" aria-selected="false">Documentação
-                    API</button>
+            <li class="nav-item " role="presentation">
+                <button class="nav-link active" id="algoritimocsv-tab" data-bs-toggle="tab"
+                    data-bs-target="#algoritimocsv" type="button" role="tab" aria-controls="algoritimocsv"
+                    aria-selected="false">Algorítimo CSV</button>
             </li>
 
             <li class="nav-item" role="presentation">
@@ -44,165 +34,144 @@
     </nav>
     <!-- END menu navegação TABS -->
     <div class="tab-content pt-4" id="myTabContent">
-        <!-- DOCUMENTAÇÃO ALGORITIMO -->
-        <section class="tab-pane fade show active" id="documentacaoAlg" role="tabpanel" aria-labelledby="documentacaoAlg-tab" tabindex="0">
-            <section class="intro">
-                <h2>Apresentação</h2>
-                <p>
-                    Este projeto foi desenvolvido a fim de realizar o Teste do processo seletivo para a Vaga de
-                    Desenvolvedor Python Jr. do <strong>Hosp. Albert Einstein</strong>
-                </p>
-                <p>
-                    A principio eu comecei a fazer projetos separados e no meio do caminho decidí que sería mais vantajoso
-                    se incluisse todas as funcionalidades em um mesmo projeto, podendo demonstrar mais as minhas capacidades
-                </p>
-                <h2>
-                    Questão 2 - Manipulação de CSV com Python
-                </h2>
-                <p>
-                    O algoritimo de analise de arquivo CSV encontra-se na segunda aba "Algorítimo CSV"
-                </p>
-                <p>
-                    Este script é um exemplo simples de análise e manipulação de um arquivo CSV com algumas informações
-                    de vendas de produtos.
-                    Dentro do projeto, você encontrará o arquivo <strong>"Vendas.csv"</strong> que contém alguns dados
-                    para teste.
-                </p>
 
-                <p>
-                    Insira esse arquivo no file upload da aba Algoritimo CSV
-                </p>
-
-                <h3>Princípios básicos</h3>
-                <p>
-                    - Calcular e exibir o faturamento total por produto e total de unidades vendidas.
-                </p>
-                <p>
-                    - Encontrar e exibir o produto com maior faturamento e o produto com menor faturamento.
-                </p>
-
-                <h3>Tecnologias utilizadas</h3>
-
-                <p>- <strong>pandas</strong>: Para manipulação de dados do arquivo CSV.</p>
-                <p>- <strong>pathlib</strong>: Para verificação do caminho do arquivo "Vendas.csv".</p>
-                <p>- <strong>flask</strong>: Para conversão e retorno do JSON.</p>
-
-                <p>- <strong>Python:</strong> 3.13.2</p>
-                <p>- <strong>Bootstrap:</strong> 5.3</p>
-                <p>- <strong>JavaScript</strong></p>
-                <p>- <strong>CSS</strong></p>
-                <br>
-                <h2> Funcionamento</h2>
-
-                <h3> Verificação do arquivo</h3>
-
-                <p>O script recebe o caminho do arquivo <strong>Vendas.csv</strong> que será salvo pelo end point (/csv) da API Flask</p>
-
-                <h3> Verificação das colunas </h3>
-
-                <p>O script verifica se as colunas necessárias (<strong>produto, quantidade, preco_unitario</strong>)
-                    estão presentes no arquivo.
-                    Se alguma dessas colunas estiver ausente, o programa é encerrado com uma mensagem de erro.</p>
-
-                <h3>Estrutura do script</h3>
-
-                <p><strong>1. Função `_analisar(caminho_arquivo)`</strong></p>
-                <p>- É a função principal do script.</p>
-                <p>- Verifica se todas as colunas necessárias estão presentes.</p>
-                <p>- Lê o arquivo utilizando o delimitador `;`.</p>
-                <p>- Calcula o faturamento total de cada produto (`quantidade * preco_unitario`).</p>
-                <p>- Agrupa os dados por produto, somando as quantidades vendidas e o faturamento total.</p>
-                <p>- Chama a função `_retorna_json()` para retornar os resultados.</p>
-
-                <p><strong>2. Função `_verifica_colunas(caminho_arquivo, colunas_utilizadas)`</strong></p>
-                <p>- Confirma se todas as colunas necessárias estão presentes no arquivo CSV.</p>
-                <p>- Caso alguma coluna esteja ausente, o script é encerrado com uma mensagem de erro.</p>
-
-                <p><strong>3.Função `_retorna_json(tabela_agrupada)`</strong></p>
-                <p>- Retorna um json com os resultados.
-                <p>- Chama `_menor_maior_faturamento()` para obter os produtos com menor e maior faturamento.</p>
-                <p>- Formata os valores monetários para o formato `R$XX,XX`.</p>
-                <p>- Printa a tabela de vendas com a quantidade total vendida e faturamento total por produto.</p>
-                <p>- Printa também os produtos com menor e maior faturamento.</p>
-
-                <p><strong>4. Função `_menor_maior_faturamento(tabela_agrupada)`</strong></p>
-                <p>- Recebe um DataFrame com os dados agrupados por produto.</p>
-                <p>- Encontra o produto com menor faturamento e o produto com maior faturamento.</p>
-                <p>- Retorna um novo DataFrame contendo os nomes desses produtos e seus valores formatados como `R$`.
-                </p>
-            </section>
-        </section>
-        <!-- END DOCUMENTAÇÃO ALGORITIMO -->
         <!-- ALGORITMO CSV -->
-        <section class="tab-pane fade show" id="algoritimocsv" role="tabpanel" aria-labelledby="algoritimocsv-tab" tabindex="1">
-            <h2>
-                Questão 2 - Manipulação de CSV com Python
-            </h2>
+        <section class="tab-pane fade show active" id="algoritimocsv" role="tabpanel"
+            aria-labelledby="algoritimocsv-tab" tabindex="0">
+            <h1 class="text-primary">📌 Questão 2 - Manipulação de CSV com Python</h1>
+
             <div class="mb-3">
-                <label for="formFile" class="form-label">Insira o Arquivo "Vendas.csv" voce pode encontra-lo na pasta raiz do projeto ou baixar 
-                    <a href="http://127.0.0.1:5000/download-csv" download="Vendas.csv">aqui</a> 
+                <h2 class="mt-4">⚙️ Como Usar?</h2>
+                <p>Dentro do projeto, você encontrará o arquivo <strong>"Vendas.csv"</strong> que contém alguns dados
+                    para teste.</p>
+                <p>Você também pode baixá-lo
+                    <a href="http://127.0.0.1:5000/download-csv" download="Vendas.csv">aqui</a> .
+                </p>
+                <label for="formFile" class="form-label">
+                    <p>Insira o arquivo <strong>"Vendas.csv"</strong> no file upload abaixo e o resultado será exibido
+                        em uma nova guia no formato JSON.</p>
                 </label>
-                <input class="form-control" type="file" id="formFile" accept=".csv" onchange="ArquivoSelecionado(event)">
-              </div>
+
+                <input class="form-control" type="file" id="formFile" accept=".csv"
+                    onchange="ArquivoSelecionado(event)">
+            </div>
+            <!-- DOCUMENTACAO ALGORITMO -->
+            <section class="intro mt-5">
+                <h2 class="mt-4">📜 Apresentação</h2>
+                <p>Este projeto foi desenvolvido a fim de realizar o Teste do processo seletivo para a Vaga de
+                    Desenvolvedor Python Jr. do <strong>Hosp. Albert Einstein 🏥</strong>.</p>
+                <p>A princípio eu comecei a fazer projetos separados e no meio do caminho decidi que seria mais
+                    vantajoso incluir todas as funcionalidades em um mesmo projeto, podendo demonstrar mais as minhas
+                    capacidades gerais.</p>
+                <p>Este script é um exemplo simples de análise e manipulação de um arquivo CSV com algumas informações
+                    de vendas de produtos.</p>
+
+                <h2 class="mt-4">📌 Princípios básicos</h2>
+                <ul>
+                    <li>Calcular e exibir o faturamento total por produto e total de unidades vendidas.</li>
+                    <li>Encontrar e exibir o produto com maior faturamento e o produto com menor faturamento.</li>
+                </ul>
+
+                <h2 class="mt-4">🛠️ Tecnologias utilizadas</h2>
+                <ul>
+                    <li><strong>pandas</strong>: Para manipulação de dados do arquivo CSV.</li>
+                    <li><strong>pathlib</strong>: Para verificação do caminho do arquivo "Vendas.csv".</li>
+                    <li><strong>flask</strong>: Para conversão e retorno do JSON.</li>
+                    <li><strong>Python</strong>: 3.13.2</li>
+                    <li><strong>Bootstrap</strong>: 5.3</li>
+                    <li><strong>JavaScript</strong></li>
+                    <li><strong>CSS</strong></li>
+                </ul>
+
+                <h2 class="mt-4">🔄 Funcionamento</h2>
+                <h3>📂 Verificação do arquivo</h3>
+                <p>O script recebe o caminho do arquivo <strong>Vendas.csv</strong> que será salvo pelo endpoint
+                    <code>/csv</code> da API Flask.
+                </p>
+
+                <h3>🔍 Verificação das colunas</h3>
+                <p>O script verifica se as colunas necessárias (<code>produto</code>, <code>quantidade</code>,
+                    <code>preco_unitario</code>) estão presentes no arquivo. Se alguma dessas colunas estiver ausente, o
+                    programa é encerrado com uma mensagem de erro.
+                </p>
+
+                <h2 class="mt-4">📝 Estrutura do script</h2>
+                <ol>
+                    <li><strong>Função <code>_analisar(caminho_arquivo)</code></strong>
+                        <ul>
+                            <li>É a função principal do script.</li>
+                            <li>Verifica se todas as colunas necessárias estão presentes.</li>
+                            <li>Lê o arquivo utilizando o delimitador <code>;</code>.</li>
+                            <li>Calcula o faturamento total de cada produto (<code>quantidade * preco_unitario</code>).
+                            </li>
+                            <li>Agrupa os dados por produto, somando as quantidades vendidas e o faturamento total.</li>
+                            <li>Chama a função <code>_retorna_json()</code> para retornar os resultados.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Função <code>_verifica_colunas(caminho_arquivo, colunas_utilizadas)</code></strong>
+                        <ul>
+                            <li>Confirma se todas as colunas necessárias estão presentes no arquivo CSV.</li>
+                            <li>Caso alguma coluna esteja ausente, o script é encerrado com uma mensagem de erro.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Função <code>_retorna_json(tabela_agrupada)</code></strong>
+                        <ul>
+                            <li>Retorna um JSON com os resultados.</li>
+                            <li>Chama <code>_menor_maior_faturamento()</code> para obter os produtos com menor e maior
+                                faturamento.</li>
+                            <li>Formata os valores monetários para o formato <code>R$XX,XX</code>.</li>
+                            <li>Exibe a tabela de vendas com a quantidade total vendida e faturamento total por produto.
+                            </li>
+                            <li>Exibe também os produtos com menor e maior faturamento.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Função <code>_menor_maior_faturamento(tabela_agrupada)</code></strong>
+                        <ul>
+                            <li>Recebe um DataFrame com os dados agrupados por produto.</li>
+                            <li>Encontra o produto com menor faturamento e o produto com maior faturamento.</li>
+                            <li>Retorna um novo DataFrame contendo os nomes desses produtos e seus valores formatados
+                                como <code>R$</code>.</li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <h2 class="mt-4">🎯 Conclusão</h2>
+                <p>Com este projeto, pude demonstrar algumas habilidades no uso de tecnologias como:</p>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Bootstrap</li>
+                    <li>Python</li>
+                    <li>Flask</li>
+                    <li>PathLib</li>
+                    <li>Pandas</li>
+                </ul>
+                <p>Também pude demonstrar meus conhecimentos em organização de código, lógica de programação,
+                    documentação, entre outras habilidades.</p>
+            </section>
+            <!-- END DOCUMENTACAO ALGORITMO -->
         </section>
         <!-- END ALGORITMO CSV -->
-         <!-- DOCUMENTAÇÃO API -->
-        <section class="tab-pane fade show" id="documentacaoapi" role="tabpanel" aria-labelledby="documentacaoapi-tab" tabindex="2">
+
+        <!-- API -->
+        <section class="tab-pane fade show" id="api" role="tabpanel" aria-labelledby="api-tab" tabindex="2">
+            <h1>Web Frameworks API com Flask</h1>
             <section>
-                <p>
-                    A API que encontra-se na ultima aba foi desenvolvida utilizando o framework Flask para Python. Ela
-                    foi criada com o propósito de fornecer funcionalidades simples para demonstração.
-                </p>
-                <p>
-                    A API oferece tres endpoints principais:
-                </p>
+                <h2>🎯 Apresentação</h2>
+                <p>Esta API foi desenvolvida utilizando o framework <strong>Flask</strong> para Python. Ela foi criada
+                    com o propósito de fornecer funcionalidades simples para demonstração. A API oferece três endpoints
+                    principais:</p>
                 <ul>
-                    <li><strong>Home:</strong> A página inicial(Pagina atual) da API.</li>
+                    <li><strong>Home:</strong> A página inicial (Página atual) da API.</li>
                     <li><strong>Saudação:</strong> Retorna uma saudação personalizada.</li>
                     <li><strong>Soma:</strong> Realiza a soma de dois números fornecidos via JSON.</li>
                 </ul>
-                <p>Alem dos end points de uso interno e o end point de Análise de CSV</p>
+                <p>Além dos endpoints de uso interno, há também o endpoint de <strong>Análise de CSV</strong>.</p>
             </section>
-
-            <section class="api-endpoint">
-                <h2>1. End Point: Home</h2>
-                <p><strong>URL:</strong> <code>/</code></p>
-                <p><strong>Método:</strong> GET</p>
-                <p><strong>Descrição:</strong> Retorna a página inicial.</p>
-            </section>
-
-            <section class="api-endpoint">
-                <h2>2. End Point: Saudação</h2>
-                <p><strong>URL:</strong> <code>/saudacao?nome={nome}</code></p>
-                <p><strong>Método:</strong> GET</p>
-                <p><strong>Descrição:</strong> Retorna uma saudação personalizada com o nome enviado como parâmetro na
-                    query string.</p>
-                <pre><code>Exemplo de chamada: http://localhost:5000/saudacao?nome=Andrezinho</code></pre>
-                <p><strong>Resposta:</strong> "Olá, {nome} seja muito bem-vindo(a) a minha API Flask"</p>
-            </section>
-
-            <section class="api-endpoint">
-                <h2>3. End Point: Soma</h2>
-                <p><strong>URL:</strong> <code>/soma</code></p>
-                <p><strong>Método:</strong> POST</p>
-                <p><strong>Descrição:</strong> Recebe um objeto JSON no corpo da requisição e retorna a soma dos dois
-                    números fornecidos.</p>
-                <pre>
-                    <code>Exemplo de JSON enviado:</code>
-                    {
-                        "operando1": 10,
-                        "operando2": 5
-                    }
-                </pre>
-                <p><strong>Resposta:</strong> "A soma de {operando1} + {operando2} é {soma}"</p>
-            </section>
-
-        </section>
-        <!--END DOCUMENTAÇÃO API -->
-        <!-- API -->
-        <section class="tab-pane fade show" id="api" role="tabpanel" aria-labelledby="api-tab" tabindex="3">
-            <p>Voce pode testar os end points com o postman atraves do 
-                <a href="http://127.0.0.1:5000/download-json"download="APIFlask.postman_collection.json">Arquivo JSON</a>
+            <p>Voce pode testar os end points com o postman atraves do
+                <a href="http://127.0.0.1:5000/download-json" download="APIFlask.postman_collection.json">Arquivo
+                    JSON</a>
             </p>
 
             <h1>Método GET</h1>
@@ -211,8 +180,8 @@
             <form action="http://127.0.0.1:5000/saudacao" method="GET">
                 <fieldset>
                     <legend>Insira seu nome</label>
-                    <input type="text" id="nome" name="nome">
-                    <button id="saudacao" type="submit" class="btn btn-success">Enviar</button>
+                        <input type="text" id="nome" name="nome">
+                        <button id="saudacao" type="submit" class="btn btn-success">Enviar</button>
                 </fieldset>
             </form>
             <br>
@@ -232,8 +201,76 @@
                 <button id="saudacao" type="submit" class="btn btn-success">Enviar</button>
             </form>
 
-        </section>
-        <!-- END API -->
+            <!-- DOCUMENTAÇÃO API -->
+            <section class="" id="documentacaoapi" role="tabpanel" aria-labelledby="documentacaoapi-tab" tabindex="2">
+                <section class="mt-5">
+                    <h2>🚀 Endpoints</h2>
+
+                    <section class="api-endpoint">
+                        <h2>1. End Point: Home</h2>
+                        <p><strong>URL:</strong> <code>/</code></p>
+                        <p><strong>Método:</strong> GET</p>
+                        <p><strong>Descrição:</strong> Retorna a página inicial.</p>
+                    </section>
+
+                    <section class="api-endpoint">
+                        <h2>2. End Point: Saudação</h2>
+                        <p><strong>URL:</strong> <code>/saudacao?nome={nome}</code></p>
+                        <p><strong>Método:</strong> GET</p>
+                        <p><strong>Descrição:</strong> Retorna uma saudação personalizada com o nome enviado como
+                            parâmetro na
+                            query string.</p>
+                        <pre><code>Exemplo de chamada: http://localhost:5000/saudacao?nome=Andrezinho</code></pre>
+                        <p><strong>Resposta:</strong> "Olá, {nome} seja muito bem-vindo(a) a minha API Flask"</p>
+                    </section>
+
+                    <section class="api-endpoint">
+                        <h2>3. End Point: Soma</h2>
+                        <p><strong>URL:</strong> <code>/soma</code></p>
+                        <p><strong>Método:</strong> POST</p>
+                        <p><strong>Descrição:</strong> Recebe um objeto JSON no corpo da requisição e retorna a soma dos
+                            dois
+                            números fornecidos.</p>
+                        <pre>
+                        <code>Exemplo de JSON enviado:</code>
+                        {
+                            "operando1": 10,
+                            "operando2": 5
+                        }
+                    </pre>
+                        <p><strong>Resposta:</strong> "A soma de {operando1} + {operando2} é {soma}"</p>
+                    </section>
+
+                    <section>
+                        <h2>🛠️ Tecnologias Utilizadas</h2>
+                        <div class="tech-list">
+                            <div class="tech-item">HTML 5 🖥️</div>
+                            <div class="tech-item">CSS 🎨</div>
+                            <div class="tech-item">JavaScript ⚡</div>
+                            <div class="tech-item">Bootstrap 🧑‍💻</div>
+                            <div class="tech-item">Python 🐍</div>
+                            <div class="tech-item">Flask 🔥</div>
+                            <div class="tech-item">PathLib 📁</div>
+                            <div class="tech-item">Pandas 📊</div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>📜 Conclusão</h2>
+                        <p>Com este projeto pude demonstrar algumas habilidades de uso de diversas tecnologias como
+                            HTML5, CSS, JavaScript, Bootstrap, Python, Flask, PathLib e Pandas.
+                        <p>
+                            Além disso, foi uma
+                            ótima oportunidade para mostrar meus conhecimentos em <strong>organização de
+                                código</strong>, <strong>lógica de programação</strong>, <strong>documentação</strong>,
+                            entre outros.</p>
+                        </p>
+                    </section>
+                </section>
+                <!-- END DOCUMENTAÇÃO API -->
+                <!--END DOCUMENTAÇÃO API -->
+            </section>
+            <!-- END API -->
     </div>
 
     <footer>
@@ -241,4 +278,5 @@
     </footer>
 </body>
 <script src="../static/js/script.js"></script>
+
 </html>
