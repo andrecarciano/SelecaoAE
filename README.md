@@ -8,7 +8,7 @@ Este projeto foi criado com o intuito de demonstrar algumas habilidades e resolv
 
 ## 🚀 Função Assíncrona com Python
 📂 Na pasta **“FuncaoAssincrona”** contém uma lógica de uso de função assíncrona em Python. 
-🔗 Toda as informações que você precisará estão no arquivo [README.md](#) dentro da pasta **“FuncaoAssincrona”**.
+🔗 Toda as informações que você precisará estão no arquivo [README.md](https://github.com/andrecarciano/SelecaoAE/tree/main/FuncaoAssincrona) dentro da pasta **“FuncaoAssincrona”**.
 
 ---
 
@@ -17,14 +17,15 @@ Este projeto foi criado com o intuito de demonstrar algumas habilidades e resolv
 
 ### 🔹 1- Análise de Dados em arquivo CSV
 📌 Contém uma lógica para analisar dados em um arquivo CSV.
-📑 Toda a Documentação detalhada você encontra no arquivo [README.md](#) dentro da pasta **“APIFlask”** e na aba **“Documentação Algorítimo”** com o app em execução.
+
+📑 Toda a Documentação detalhada você encontra no arquivo [README.md](https://github.com/andrecarciano/SelecaoAE/tree/main/APIFlask) dentro da pasta **“APIFlask”** e na aba **“Documentação Algorítimo”** com o app em execução.
 
 ### 🔹 2- API com Endpoints GET e POST
 📌 Contém uma API simples com os Endpoints solicitados:
 - **GET(/saudacao)**
 - **POST(/soma)**
   
-📑 Toda a Documentação detalhada você encontra no arquivo [README.md](#) dentro da pasta **“APIFlask”** e na aba **“Documentação API”** com o app em execução.
+📑 Toda a Documentação detalhada você encontra no arquivo [README.md](https://github.com/andrecarciano/SelecaoAE/tree/main/APIFlask) dentro da pasta **“APIFlask”** e na aba **“Documentação API”** com o app em execução.
 
 ---
 
@@ -32,7 +33,7 @@ Este projeto foi criado com o intuito de demonstrar algumas habilidades e resolv
 📌 Na raiz do projeto você encontrará um **DockerFile** com os comandos necessários para gerar e iniciar um container Docker rodando o projeto.
 
 ### 🚀 Utilizar imagem do projeto para gerar um Container Docker
-Este projeto tem uma imagem Docker disponível em: **{link}**.
+Este projeto tem uma imagem Docker disponível em: **[DockerHub/andrecarciano](https://hub.docker.com/r/andrecarciano/apiselecaoae)**.
 Se você quiser obter a imagem desse projeto para iniciar o seu próprio container, execute as instruções abaixo no seu console:
 
 ```sh
