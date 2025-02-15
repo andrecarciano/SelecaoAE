@@ -1,28 +1,74 @@
-# Como Usar a API
+# 📌 O que contém nesse projeto?
 
-Este script é um exemplo simples de análise e manipulação de um arquivo CSV com algumas informações de vendas de produtos.
-Dentro do projeto, você encontrará o arquivo **"Vendas.csv"** que contém alguns dados para teste.
+Este projeto foi criado com o intuito de demonstrar algumas habilidades e resolver algumas questões do **“Teste para Vaga de Desenvolvedor Python”** do processo seletivo do **Hospital Albert Einstein**.🏥
 
-## Funcionamento
+📌 Todo o código-fonte está devidamente comentado para facilitar a leitura e entendimento da lógica.
 
-### Verificação do arquivo
+---
 
-O script verifica se o arquivo **Vendas.csv** existe antes de iniciar a manipulação dos dados.
-Caso o arquivo seja deletado ou renomeado, uma mensagem será exibida no console.
+## 🚀 Função Assíncrona com Python
+📂 Na pasta **“FuncaoAssincrona”** contém uma lógica de uso de função assíncrona em Python. 
+🔗 Toda as informações que você precisará estão no arquivo [README.md](#) dentro da pasta **“FuncaoAssincrona”**.
 
-### Verificação das colunas
+---
 
-O script verifica se as colunas necessárias (**produto, quantidade, preco_unitario**) estão presentes no arquivo.
-Se alguma dessas colunas estiver ausente, o programa é encerrado com uma mensagem de erro.
+## 🌐 API Flask
+📂 Na pasta **“APIFlask”** contém uma API simples que soluciona **2 questões** do teste citado no início deste documento.
 
-## Estrutura do script
+### 🔹 1- Análise de Dados em arquivo CSV
+📌 Contém uma lógica para analisar dados em um arquivo CSV.
+📑 Toda a Documentação detalhada você encontra no arquivo [README.md](#) dentro da pasta **“APIFlask”** e na aba **“Documentação Algorítimo”** com o app em execução.
 
-1. **testando**
-   - lorem
+### 🔹 2- API com Endpoints GET e POST
+📌 Contém uma API simples com os Endpoints solicitados:
+- **GET(/saudacao)**
+- **POST(/soma)**
+  
+📑 Toda a Documentação detalhada você encontra no arquivo [README.md](#) dentro da pasta **“APIFlask”** e na aba **“Documentação API”** com o app em execução.
 
-## Como executar o script
+---
 
-1. Certifique-se de ter o Python 3.13.2 instalado.
-2. Instale as dependências necessárias com:
-   ```sh
-   pip install pandas
+## 🐳 Docker File
+📌 Na raiz do projeto você encontrará um **DockerFile** com os comandos necessários para gerar e iniciar um container Docker rodando o projeto.
+
+### 🚀 Utilizar imagem do projeto para gerar um Container Docker
+Este projeto tem uma imagem Docker disponível em: **{link}**.
+Se você quiser obter a imagem desse projeto para iniciar o seu próprio container, execute as instruções abaixo no seu console:
+
+```sh
+# Baixar a imagem Docker
+ docker pull andrecarciano/apiselecaoae
+
+# Iniciar o container
+ docker run -d -p 5000:5000 andrecarciano/apiselecaoae
+```
+
+---
+
+## 🌍 Como acessar a aplicação?
+Para acessar a aplicação, utilize o comando correspondente ao seu sistema operacional:
+
+📌 **Windows (cmd ou powershell):**
+```sh
+start http://localhost:5000
+```
+
+📌 **macOS:**
+```sh
+open http://localhost:5000
+```
+
+📌 **Linux/macOS (para distribuições Linux com suporte a xdg-open):**
+```sh
+xdg-open http://localhost:5000
+```
+
+Ou utilize um comando compatível com seu sistema operacional.
+
+---
+
+## 🎯 Conclusão
+📌 Os itens presentes neste projeto demonstram algumas **técnicas de desenvolvimento**, respondendo algumas das questões do teste proposto e unificando essas soluções em um único projeto.
+
+✨ **Seja bem-vindo ao projeto e aproveite!** 🚀
+
