@@ -77,7 +77,7 @@ O script foi dividido em 4 funções:
 
 ### 🎬 Demonstração
 
-![Demo](https://media.giphy.com/media/l4KbdtYf0IBfGGYac/giphy.gif)
+![Demo](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2pmZW44MjZlajRoZDU0M245ZjU5OWljOWdncWhxb3l4Nmh3MWRveiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YlL7CQ93IraCIKpuHy/giphy.gif)
 
 ---
 
@@ -134,7 +134,7 @@ Além disso, tive a oportunidade de demonstrar conhecimentos em **organização 
 
 ### 🎬 Demonstração
 
-![Demo](https://media.giphy.com/media/l4KbdtYf0IBfGGYac/giphy.gif)
+![Demo](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHhpOGI1MDR0aGkzN3lyankwMWdncHQwdTR3NGI2YXlqdTZkcmRiYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/yfvScRWryZUCtcw4Qc/giphy.gif)
 
 ---
 
