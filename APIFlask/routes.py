@@ -60,7 +60,7 @@ def home():
 #Download Arquivo JSON
 @app.route('/download-json')
 def download_json():
-    caminho_arquivo = "postmanJson\\postman_collection.json"
+    caminho_arquivo = "postmanJson/postman_collection.json"
     return send_file(caminho_arquivo, as_attachment=True, mimetype='application/json')
 
 
