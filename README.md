@@ -1,4 +1,4 @@
-# Manipulação de CSV com Python
+# Como Usar a API
 
 Este script é um exemplo simples de análise e manipulação de um arquivo CSV com algumas informações de vendas de produtos.
 Dentro do projeto, você encontrará o arquivo **"Vendas.csv"** que contém alguns dados para teste.
