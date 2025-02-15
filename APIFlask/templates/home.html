@@ -170,14 +170,14 @@
                 <p>Além dos endpoints de uso interno, há também o endpoint de <strong>Análise de CSV</strong>.</p>
             </section>
             <p>Voce pode testar os end points com o postman atraves do
-                <a href="http://127.0.0.1:5000/download-json" download="APIFlask.postman_collection.json">Arquivo
+                <a href="http://localhost:5000/download-json" download="APIFlask.postman_collection.json">Arquivo
                     JSON</a>
             </p>
 
             <h1>Método GET</h1>
             <h2>(/saudacao?nome={SeuNome} )</h2>
             <br>
-            <form action="http://127.0.0.1:5000/saudacao" method="GET">
+            <form action="http://localhost:5000/saudacao" method="GET">
                 <fieldset>
                     <legend>Insira seu nome</label>
                         <input type="text" id="nome" name="nome">
@@ -189,7 +189,7 @@
             <h1>Método POST</h1>
             <h2>(/soma)</h2>
             <br>
-            <form id="formpost" action="http://127.0.0.1:5000/soma" method="POST">
+            <form id="formpost" action="http://localhost:5000/soma" method="POST">
                 <fieldset>
                     <legend>Primeiro número</legend>
                     <input type="text" id="operando1" name="operando1">

@@ -20,7 +20,7 @@
 
         try {
             // Faz a requisição POST com JSON
-            const response = await fetch("http://127.0.0.1:5000/soma", {
+            const response = await fetch("http://localhost:5000/soma", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -46,7 +46,7 @@
                 arquivo.append("file", file); // Adiciona o arquivo ao FormData
 
                 //requisição para a API
-                const response = await fetch("http://127.0.0.1:5000/csv", {
+                const response = await fetch("http://localhost:5000/csv", {
                     method: "POST",
                     body: arquivo, // Envia o arquivo como FormData
                 });
